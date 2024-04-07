@@ -74,3 +74,7 @@ install(EXPORT SickLDMRSTargets DESTINATION
 
 # Install catkin package.xml
 install(FILES package.xml DESTINATION share/sick_ldmrs)
+
+SET(CPACK_GENERATOR "DEB")
+SET(CPACK_DEBIAN_PACKAGE_MAINTAINER "KK") #required
+INCLUDE(CPack)
